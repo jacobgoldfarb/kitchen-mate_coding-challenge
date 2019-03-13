@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Welcome to Tic Tac Toe</h1>
+    <!-- The main interface only has one component: the tic tac toe board. -->
+    <TicTacToe id="game-board"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TicTacToe from './components/TicTacToe.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    TicTacToe
   }
 }
 </script>
@@ -24,5 +24,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#game-board{
+  margin: 2rem auto;
+  width: 50%;
+  padding: 10px;
 }
 </style>
